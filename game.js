@@ -10,7 +10,7 @@ const FACTIONS = {
 
 const CARD_SETS = {
   court: [
-    { name: 'Bloodbound Initiate', cost: 1, attack: 2, health: 1, ability: 'Both leaders lose 1 Vitality.', effect: 'bloodPrice'image: 'images/cards/bloodbound-initiate.webp' },
+    { name: 'Bloodbound Initiate', cost: 1, attack: 2, health: 1, ability: 'Both leaders lose 1 Vitality.', effect: 'bloodPrice', image: 'images/cards/cfe76ec8-bf55-4c28-b7fd-2d7c3079b2d0.png' },
     { name: 'Crimson Acolyte', cost: 2, attack: 2, health: 2, ability: 'Restore 2 Vitality.', effect: 'heal' },
     { name: 'Nightveil Stalker', cost: 2, attack: 3, health: 1, ability: 'A swift hunter of the eclipse.' },
     { name: 'Sanguine Duelist', cost: 3, attack: 3, health: 3, ability: 'A disciplined blade in the Queen’s service.' },
@@ -328,11 +328,11 @@ function cardMarkup(card, zone, ownerIndex) {
   return `<${tag} class="${classes}" ${actionAttributes} ${zone === 'hand' ? 'type="button"' : ''}>
     <span class="card-cost">${card.cost}</span>
     <strong class="card-name">${card.name}</strong>
- <div class="card-portrait">
-  ${card.image 
-    ? `<img src="${card.image}" alt="Artwork for ${card.name}" loading="lazy">`
-    : '<span class="portrait-placeholder">✦</span>'}
-</div>
+    <div class="card-portrait">
+      ${card.image
+        ? `<img src="${card.image}" alt="Artwork for ${card.name}" loading="lazy">`
+        : '<span class="portrait-placeholder">✦</span>'}
+    </div>
     <div class="card-text">${card.ability}</div>
     ${card.attack ? `<div class="card-stats"><span>${card.attack}</span><span>${health}</span></div>` : ''}
   </${tag}>`;
