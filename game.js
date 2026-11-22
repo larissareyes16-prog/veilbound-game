@@ -328,7 +328,11 @@ function cardMarkup(card, zone, ownerIndex) {
   return `<${tag} class="${classes}" ${actionAttributes} ${zone === 'hand' ? 'type="button"' : ''}>
     <span class="card-cost">${card.cost}</span>
     <strong class="card-name">${card.name}</strong>
-    <div class="card-portrait"></div>
+ <div class="card-portrait">
+  ${card.image
+    ? `<img src="${card.image}" alt="Artwork for ${card.name}" loading="lazy">`
+    : '<span class="portrait-placeholder">✦</span>'}
+</div>
     <div class="card-text">${card.ability}</div>
     ${card.attack ? `<div class="card-stats"><span>${card.attack}</span><span>${health}</span></div>` : ''}
   </${tag}>`;
