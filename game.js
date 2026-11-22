@@ -10,7 +10,7 @@ const FACTIONS = {
 
 const CARD_SETS = {
   court: [
-    { name: 'Bloodbound Initiate', cost: 1, attack: 2, health: 1, ability: 'Both leaders lose 1 Vitality.', effect: 'bloodPrice' },
+    { name: 'Bloodbound Initiate', cost: 1, attack: 2, health: 1, ability: 'Both leaders lose 1 Vitality.', effect: 'bloodPrice'image: 'images/cards/bloodbound-initiate.webp' },
     { name: 'Crimson Acolyte', cost: 2, attack: 2, health: 2, ability: 'Restore 2 Vitality.', effect: 'heal' },
     { name: 'Nightveil Stalker', cost: 2, attack: 3, health: 1, ability: 'A swift hunter of the eclipse.' },
     { name: 'Sanguine Duelist', cost: 3, attack: 3, health: 3, ability: 'A disciplined blade in the Queen’s service.' },
