@@ -351,7 +351,26 @@ h1 {
 }
 
 .card.creature .card-portrait {
-    display: none;
+.card-portrait {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-portrait img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portrait-placeholder {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    color: var(--gold);
+    font-size: 32px;
+}
 }
 
 .card-text {
