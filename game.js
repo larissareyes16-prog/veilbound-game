@@ -329,7 +329,7 @@ function cardMarkup(card, zone, ownerIndex) {
     <span class="card-cost">${card.cost}</span>
     <strong class="card-name">${card.name}</strong>
  <div class="card-portrait">
-  ${card.image
+  ${card.image 
     ? `<img src="${card.image}" alt="Artwork for ${card.name}" loading="lazy">`
     : '<span class="portrait-placeholder">✦</span>'}
 </div>
